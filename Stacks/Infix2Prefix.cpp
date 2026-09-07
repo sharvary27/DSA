@@ -31,7 +31,7 @@ using namespace std;
         return false;
     }
     
-    string infixToPrefix(string &s) {
+    string infixToPrefix(const string &s) {
         // code here
         int n = s.length();
         stack<char> st;
@@ -70,11 +70,3 @@ using namespace std;
         reverse(res.begin(), res.end());
         return res;
     }
-
-
-    int main(){
-        string infix = "a+b*c";
-        cout << infixToPrefix(infix);
-        return 0;
-    }
-
